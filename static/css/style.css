@@ -1,0 +1,419 @@
+@media (max-width: 768px) {
+    .karta2022 {
+        min-height: 350px;
+    }
+}
+
+@media (min-width: 769px) {
+    .karta2022 {
+        min-height: 700px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .karta2022 {
+        min-height: 900px;
+    }
+}
+
+
+.flexquotas::-webkit-scrollbar {
+    height: 7px !important;
+    cursor: pointer;
+}
+
+.flexscroll::-webkit-scrollbar {
+    height: 5px !important;
+    cursor: pointer;
+}
+
+.flexscroll {
+    overflow-x: auto !important;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+/ / -webkit-box-shadow: inset 0 0 6 px rgba(15, 117, 47, 1);
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+/ / -webkit-box-shadow: inset 0 0 6 px rgba(15, 117, 47, 0.5);
+    background: #0F752F;
+}
+
+.contentarea {
+    padding: 30px;
+    min-height: 30vh;
+}
+
+.pageheader {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    /**/
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0F752F;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+
+.pagecontent {
+    font-family: Gilroy;
+    font-size: 18px;
+    padding: 30px !important;
+}
+
+
+.input-for-white {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    max-width: 100%;
+    height: 54px;
+    width: 100%;
+    border: solid 2px #53B978;
+    /**/
+}
+
+
+.secnav {
+    height: 90px;
+    background: #0F752F;
+    color: white;
+    max-width: 100%;
+}
+
+.seclogo {
+    height: 270px;
+    background: #0F752F;
+    color: white;
+}
+
+
+.topmenuimg .img {
+    margin-top: 19px;
+    width: 52px;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+    .topmenubtn {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .topmenubtn .text {
+        font-size: 13px !important;
+    }
+
+
+}
+
+
+.topmenubtn {
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+    white-space: nowrap;
+}
+
+.topmenubtn .text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    font-family: Gilroy;
+    /*font-weight: bold;*/
+    font-style: normal;
+
+
+}
+
+
+.topmenubtn:hover {
+    background: #268944;
+    cursor: pointer;
+}
+
+
+.topmenuimg {
+    cursor: pointer;
+}
+
+/**/
+
+
+@media (max-width: 1400px) {
+
+    .topmenubtn .text {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .secnav {
+        height: 66px;
+        max-width: 100%;
+    }
+
+    .topmenuimg .img {
+        margin-top: 5px;
+        width: 52px;
+    }
+
+
+    .seclogo {
+        height: 100px;
+        max-width: 100%;
+    }
+
+    .logo {
+        max-width: 70%;
+    }
+
+
+    .topmenubtn .text {
+        margin-top: 75px;
+        font-size: 25px;
+    }
+
+}
+
+
+@media (min-width: 991px) {
+    #mobnavmenu {
+        display: none !important;
+    }
+}
+
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 45%;
+}
+
+.menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+nav {
+    position: absolute;
+    background-color: #268944;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    min-height: 325px;
+    z-index: 999999;
+    border-bottom: solid 5px #0F752F;
+    opacity: 1;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 5px 50px;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 20px;
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: white;
+    text-decoration: none;
+    /*-------*/
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: white;
+    text-decoration: none;
+    background: #53B978;
+}
+
+
+.mobnavmenublock {
+    display: block;
+}
+
+.mobnavmenublock {
+    display: none;
+}
+
+
+.wom_section {
+    min-height: 465px;
+    background: white;
+
+}
+
+.wom_section h1 {
+    color: #14130F;
+    margin-top: 96px;
+    font-family: Gilroy;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-weight: 700;
+
+}
+
+
+.wom_section .partnersname {
+    font-family: Gilroy !important;
+    font-size: 19px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #14130F;
+}
+
+
+.wom_section .imgdiv {
+    min-height: 100px;
+}
+
+
+.partners {
+    min-height: 851px;
+    background: #F3F3F3;
+
+}
+
+
+.partners h1 {
+
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #14130F;
+    margin-top: 96px;
+    text-transform: uppercase;
+}
+
+
+.partners .partnersname {
+    font-family: Gilroy !important;
+    font-size: 19px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #14130F;
+}
+
+
+.partners .imgdiv {
+    min-height: 100px;
+}
+
+
+.news {
+    min-height: 400px;
+    background: white;
+
+}
+
+
+.news h1 {
+
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #14130F;
+    margin-top: 96px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 990px) {
+    .logoblock {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .logoblock {
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.covid19 {
+    font-family: Gilroy;
+    font-size: 20px;
+    background: #ff0000;
+    color: white;
+    height: 50px;
+    /**/
+
+
+}
+
+@media (max-width: 520px) {
+
+    .covid19 {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+

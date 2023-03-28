@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/font.css"/>
+    <!--    <link rel="stylesheet" type="text/css" href="../static/css/menu.css"/>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>-->
+
+    <title>{{title}}</title>
+
+</head>
+<body>
+
+
+<section class="secnav d-none d-sm-none d-lg-block " style="position: fixed; top:0; left:0; width: 100%; z-index: 99">
+    <div class="container-fluid">
+        <div class="menuflexstart">
+            <div class="d-flex flex-row justify-content-center h-100 text-start h-100 ">
+                <div class="topmenuimg logomsh topmenubtnlink" style="display: none" rel="/" style="cursor: pointer">
+                    <div class="img"><img src="../static/img/VECTOR.png" class="img-fluid  kolos"></div>
+                </div>
+                <!--                О ВЫСТАВКЕ-->
+                <div class="h-100 topmenubtn topmenubtnlink d-none d-sm-none d-md-block" rel="/about/">
+                    <div class="align-self-center">
+                        <a href="/about" style="text-decoration: none; color: white; margin: 0; padding:0">
+                            <div class="text text-nowrap ">О ВЫСТАВКЕ</div>
+                        </a></div></div>
+                <!--                ДЕЛОВАЯ ПРОГРАММА-->
+                <a href="/work_program" class="h-100"
+                   style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn d-none d-sm-none d-md-block">
+                        <div class="text">ДЕЛОВАЯ ПРОГРАММА</div>
+                    </a></div>
+                <!--                ЭКСПОНЕНТЫ-->
+                <a href="/exponents" style="text-decoration: none; color: white; margin: 0; padding:0">
+                <div class="h-100 topmenubtn topmenubtnlink  d-sm-none d-md-block" rel="/exponents/">
+                    <div class="text">ЭКСПОНЕНТЫ</div>
+                    </a></div>
+                <!--                МЕСТО ПРОВЕДЕНИЯ-->
+                <a href="/otraslevye-konkursy/" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink  d-sm-none d-md-block" rel="/otraslevye-konkursy/">
+                        <div class="text">МЕСТО ПРОВЕДЕНИЯ</div>
+                    </a></div>
+                <!--                ЭКСПЕРТНАЯ КОММИСИЯ-->
+                <a class="" href="/mediabiblioteka/" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink d-sm-none d-md-block" rel="/mediabiblioteka/">
+                        <div class="text">ЭКСПЕРТНАЯ КОММИСИЯ</div>
+                    </a></div>
+                <!--                НОВОСТИ-->
+                    <a class="" href="/program/" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink d-sm-none d-md-block" rel="/program/">
+                        <div class="text">НОВОСТИ</div>
+                <   /a></div>
+                <!--                ФОТОГАЛЕРЕЯ-->
+                <a class="" href="/vet/" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink d-sm-none d-md-block" rel="/vet/">
+                        <div class="text">ФОТОГАЛЕРЕЯ</div>
+                    </a></div>
+                <!--                КОНКУРСЫ-->
+                <a href="/smi" class="h-100" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink  d-none d-sm-none d-md-block" rel="/smi">
+                        <div class="text">КОНКУРСЫ</div>
+                    </a>
+                </div>
+                <!--                НАГРАДЫ И НОМИНАЦИИ-->
+                <a class="" href="/vet/" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink d-sm-none d-md-block" rel="/vet/">
+                        <div class="text">НАГРАДЫ И НОМИНАЦИИ</div>
+                    </a>
+                </div>
+                <!--                КОНТАКТЫ-->
+                <a href="/contacts" class="h-100" style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink  d-none d-sm-none d-md-block" rel="/smi">
+                        <div class="text">КОНТАКТЫ</div>
+                    </a>
+                </div>
+
+
+                <!--VK-->
+                <a href="https://vk.com/russianagroweek" class="h-100"
+                   style="text-decoration: none; color: white; margin: 0; padding:0">
+                    <div class="h-100 topmenubtn topmenubtnlink  d-none d-sm-none d-md-block" rel="https://vk.com/russianagroweek">
+                        <div class="text"><i class="fab fa-vk" aria-hidden="true" style=" font-size: 120%"></i></div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Begin page content -->
+<main role="main" class="container">
+    {% block content %}{% endblock %}
+</main>
+</body>
+</html>
