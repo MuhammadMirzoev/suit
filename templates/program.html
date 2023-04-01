@@ -1,0 +1,92 @@
+<{% extends "base.html" %}
+
+{% block content %}
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Программа</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<span class="icon section-icon icon-office-21"></span>
+		<h3>Программа</h3>
+		<br>
+		<br>
+
+		<a class="schedule">
+			<a class="nav-wrapper">
+				<span class="nav-current">
+					<h5 class="highlight" id="selectedDay">День 1</h5>
+					<p class="text-alt" id="selectedDate">24 мая</p>
+				</span>
+				<ul class="nav nav-schedule">
+					<li><a href="#1" onclick="changeDay(1)"><h5 class="highlight">День 1</h5><p class="text-alt">24 мая</p></a></li>
+					<li><a href="#2" onclick="changeDay(2)"><h5 class="highlight">День 2</h5><p class="text-alt">25 мая</p></a></li>
+					<li><a href="#3" onclick="changeDay(3)"><h5 class="highlight">День 3</h5><p class="text-alt">26 мая</p></a></li>
+					<li><a href="#4" onclick="changeDay(4)"><h5 class="highlight">День 4</h5><p class="text-alt">27 мая</p></a></li>
+					<li><a href="#5" onclick="changeDay(5)"><h5 class="highlight">День 5</h5><p class="text-alt">28 мая</p></a></li>
+				</ul>
+			</a>
+        </a>
+
+			<div class="tab-content">
+				<div id="day1" class="tab-pane fade">
+					<div class="tab-content tab-content-schedule">
+						<div class="panel-group">
+							<div class="panel schedule-item">
+								<div class="lecture-icon-wrapper"></div>
+								<div class="schedule-item-toggle">
+									<strong class="time highlight"><span class="icon icon-office-24"></span>08.00-19.00</strong>
+									<h6 class="title">Text</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="day2" class="tab-pane fade">
+					<div class="tab-content tab-content-schedule">
+						<div class="panel-group">
+							<div class="panel schedule-item">
+								<div class="lecture-icon-wrapper"></div>
+								<div class="schedule-item-toggle">
+									<strong class="time highlight"><span class="icon icon-office-24"></span>08.00-19.00</strong>
+									<h6 class="title">Text</h6>
+									<p class="description">Text</p>
+								</div>
+							</div>
+							<div class="panel schedule-item">
+								<div class="lecture-icon-wrapper"></div>
+								<div class="schedule-item-toggle">
+									<strong class="time highlight"><span class="icon icon-office-24"></span>10.00-18.00</strong>
+									<h6 class="title">Text</h6>
+									<p class="description">Text</p>
+								</div>
+							</div>
+							<div class="panel schedule-item">
+								<div class="lecture-icon-wrapper"></div>
+								<div class="schedule-item-toggle">
+									<strong class="time highlight"><span class="icon icon-office-24"></span>11.00-12.00</strong>
+									<h6 class="title">Text</h6>
+									<p class="description">Text</p>
+								</div>
+							</div>
+							<div class="panel schedule-item">
+								<div class="lecture-icon-wrapper"></div>
+								<div class="schedule-item-toggle">
+									<strong class="time highlight"><span class="icon icon-office-24"></span>12.00-13.00</strong>
+									<h6 class="title">Text</h6>
+									<p class="description">Text</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+{% endblock %}

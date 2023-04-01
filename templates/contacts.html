@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
+
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -46,13 +50,139 @@
       .contact-email {
         color: #007bff;
       }
+      .round {
+        border-radius: 100px; /* Радиус скругления */
+        border: 3px solid green; /* Параметры рамки */
+        box-shadow: 0 0 7px #666; /* Параметры тени */
+      }
+
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #333;
+        animation: colorChange 5s ease-in-out infinite alternate;
+      }
+      @keyframes colorChange {
+        from {
+          color: #333;
+        }
+        to {
+          color: #c71e1e;
+        }
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+      .gallery-item img {
+        display: block;
+        width: 500%;
+        height: 500%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.2);
+      }
+      .gallery-item-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .gallery-item:hover .gallery-item-info {
+        opacity: 1;
+      }
+      .gallery-item-title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .gallery-item-description {
+        margin: 10px 0 0;
+        font-size: 16px;
+      }
+      .gallery-item-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .gallery-item-close:hover {
+        color: #ccc;
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 24px;
+        }
+        .gallery {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 10px;
+        }
+        .gallery-item {
+          border-radius: 0;
+        }
+      }
+      /* Стиль для кнопки */
+      .button {
+        display: inline-block;
+        background-color: #c71e1e;
+        color: #fff;
+        border:none;
+padding: 10px 20px;
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+background-color: #f44336;
+}
     </style>
+
   </head>
   <body>
     <div class="container">
       <h1>Контакты</h1>
       <div class="contact">
-        <img src="C:\Users\IT-cube 113\Desktop\site\static\img\man.png" alt="Фотография контакта">
+        <img src="static/img/man.png" alt="Фотография контакта" class="round">
         <div class="contact-info">
           <div class="contact-name">Joe Smith</div>
           <div class="contact-phone">+7 989-888-8888</div>
@@ -61,7 +191,7 @@
         </div>
       </div>
       <div class="contact">
-        <img src="C:\Users\IT-cube 113\Desktop\site\templates\2.jpg" alt="Фотография контакта">
+        <img src="static/img/man.png" alt="Фотография контакта" class="round">
         <div class="contact-info">
           <div class="contact-name">Jane Doe</div>
           <div class="contact-phone">+7 989-888-8888</div>
@@ -70,14 +200,45 @@
         </div>
       </div>
       <div class="contact">
-        <img src="C:\Users\IT-cube 113\Desktop\site\templates\2.jpg" alt="Фотография контакта">
+        <img src="static/img/man.png" alt="Фотография контакта" class="round">
         <div class="contact-info">
           <div class="contact-name">Bob Johnson</div>
           <div class="contact-phone">+7 989-888-8888</div>
           <a href="mailto:bob.johnson@example.com" class="contact-email">bob.johnson@example.com</a>
           <div class="contact-description">Хороший мужик</div>
+
         </div>
       </div>
+      <section class="contact">
+        <div class="container">
+
+          <h2>Оставьте заявку</h2>
+          <form method="POST" action="{{ url_for('submit_form') }}">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <br>
+        <label for="message">Сообщение:</label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023, Все права защищены</p>
+      </div>
+    </footer>
     </div>
   </body>
 </html>
+
+{% endblock %}
+
+
+
+
